@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+	<style>
+		.loginBackground{
+			background-color : #1B9AE8;
+			height: 100%;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.loginForm{
+			position : absolute;
+			top : 0px;
+			left : 65%;
+			width : 295px;
+			height : 100%;
+			background-color : #FFFFFF;
+		}
+
+		.loginBtn {
+			background-color : #ffb125;
+			border-color : #f1a02a;
+			color : #14171a;
+			margin : 20px 0 0 105px;
+			float : right!important
+			border-radius : 2px;
+			width : 85px;
+			height : 30px;
+		}
+
+		.loginField {
+			clear : both;
+			display : block;
+			margin : 0 0 0 20px;
+			padding : 10px 10px;
+		}
+
+		.loginTextIn {
+			border : 2px solid #ccd6dd;
+			color : #000000;
+		}
+
+		.bigLogo {
+			position : absolute;
+			font-size : 250px;
+			color : #ffffff;
+			font-family : "Lobster", serif;
+		}
+
+		.loginBigWord {
+			position : absolute;
+			top : 70%;
+			left : 15%;
+			font-size : 60px;
+			color : #ffffff;
+		}
+
+		.loginSmallWord {
+			position : absolute;
+			top : 85%;
+			left : 25%;
+			font-size : 30px;
+			color : #ffffff;
+		}
+	</style>
+</head>
+<body class="loginBackground">
+	<div class="loginForm">
+		<form action='/firstTimeLogin' method='post' enctype='multipart/form-data'>
+			<div class="loginField" style = 'margin-top : 150px'>
+	     			Username: <br>
+				<input class="loginTextIn" autocomplete="off" name="username" maxlength="20" type="text">
+	    		</div>
+			<div class="loginField">
+	     			Password: <br>
+				<input class="loginTextIn" autocomplete="off" name="psw" maxlength="20" type="password">
+	    		</div>
+			<div class="loginField">
+				Location: <br>
+				<input type="radio" name="location" value="0" checked> Office(UG Lab) destop<br>
+		 		<input type="radio" name="location" value="1"> Office(Uni) Wi-Fi<br>
+				<input type="radio" name="location" value="2"> External Network<br>
+			</div>
+	  		<button type="submit" class="loginBtn">Login</button>
+		
+		</form>
+	</div>
+	
+	<font class="bigLogo" style = 'left : 10%; top : 10%;'>V</font>
+	<font class="bigLogo" style = 'left : 14.8%; top : 10%;'>T</font>
+
+	<font class="loginBigWord">Vetter,</font>
+	<font class="loginSmallWord">it's where you can find more.</font>
+
+</body>
+</html>
+
